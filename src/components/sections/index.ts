@@ -1,0 +1,8 @@
+export { Navbar } from "./navbar"
+export { Hero } from "./hero"
+export { Origin } from "./origin"
+export { Benefits } from "./benefits"
+export { Product } from "./product"
+export { Testimonials } from "./testimonials"
+export { Contact } from "./contact"
+export { Footer } from "./footer"

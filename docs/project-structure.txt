@@ -1,0 +1,50 @@
+AQUA PURA - Project Structure
+==============================
+
+/
+├── app/                        # Next.js App Router (pages, layout, styles)
+│   ├── globals.css             # Global styles and design tokens
+│   ├── layout.tsx              # Root layout with fonts and metadata
+│   └── page.tsx                # Home page (assembles all sections)
+│
+├── src/                        # Source code
+│   ├── components/             # React components
+│   │   └── sections/           # Page sections
+│   │       ├── index.ts        # Barrel exports
+│   │       ├── navbar.tsx      # Navigation bar
+│   │       ├── hero.tsx        # Hero / landing section
+│   │       ├── origin.tsx      # Brand origin story
+│   │       ├── benefits.tsx    # Product benefits
+│   │       ├── product.tsx     # Product showcase + minerals
+│   │       ├── testimonials.tsx# Customer testimonials
+│   │       ├── contact.tsx     # Contact form + info
+│   │       └── footer.tsx      # Site footer
+│   │
+│   └── data/                   # Content and configuration
+│       └── site-content.ts     # All site text, links, and data
+│
+├── components/                 # shadcn/ui components (auto-generated)
+│   └── ui/
+│
+├── public/                     # Static assets served at /
+│   └── assets/
+│       └── images/             # Site imagery
+│           ├── hero-water.jpg
+│           ├── mountain-source.jpg
+│           └── product-bottle.jpg
+│
+├── docs/                       # Documentation
+│   └── project-structure.txt   # This file
+│
+├── hooks/                      # Custom React hooks
+├── lib/                        # Utility functions (cn, etc.)
+├── next.config.mjs             # Next.js configuration
+├── package.json                # Dependencies and scripts
+└── tsconfig.json               # TypeScript configuration
+
+
+Getting Started
+===============
+1. pnpm install
+2. pnpm dev
+3. Open http://localhost:3000
